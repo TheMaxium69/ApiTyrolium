@@ -1,13 +1,26 @@
 <?php
-$API_ARRAY = json_decode(file_get_contents('http://localhost/Status/api/app.php'));
 
-var_dump($API_ARRAY)
+require_once "url.php";
+
+//Service
+/*website*/
+$SW1 = json_decode(file_get_contents( $url . 'json/SW1.php'));
+$SW3 = json_decode(file_get_contents( $url . 'json/SW3.php'));
+/*db*/
+$SD1 = json_decode(file_get_contents( $url . 'json/SD1.php'));
+/*api*/
+/*host*/
+/*other*/
+$SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
+//Server
+//NomDomaine
+//Client
+
 ?>
-
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Tyrolium API</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,27 +32,36 @@ var_dump($API_ARRAY)
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="https://tyrolium.fr/Contenu/Image/Tyrolium Site.png" alt="" width="34" class="d-inline-block align-text-top">
-      Tyrolium Status Server
+      Tyrolium API 
     </a>
   </div>
 </nav>
 
 <br>
 
-<h4>Nos Services en lignes</h4>
+<h4>Tyrolium Online Services</h4>
 
 <ol class="list-group">
 
   <li class="list-group-item d-flex justify-content-between align-items-start  list-group-item-primary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">- <u>WebSite</u></div>
+
+      <!-- SW1 = Tyrolium.fr -->
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
-            <div class="fw-bold">Tyrolium.fr</div>
-            The Official Tyrolium Website</div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            <div class="fw-bold"><?php echo $SW1->title ?></div>
+            <?php echo $SW1->description ?><br> <a href="json/<?php echo $SW1->id ?>.php">API</a> <a href="<?php echo $SW1->api->hostname ?>">SITE</a></div>
+            <?php if($SW1->api->online){?>
+               <span class="badge bg-success rounded-pill">
+                 O
+            <?php }else{ ?>
+               <span class="badge bg-danger rounded-pill"> 
+                 X
+            <?php }?>
         </li>
 
+        <!-- SW2 = TyroServ.fr -->
         <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
         <div class="ms-2 me-auto">
             <div class="fw-bold">TyroServ.fr</div>
@@ -48,12 +70,18 @@ var_dump($API_ARRAY)
             <span class="badge bg-danger rounded-pill">X</span>
         </li>
 
+        <!-- SW3 = Wonderlium.yt -->
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
-            <div class="fw-bold">Wonderlium.yt</div>
-            The Official Wonderlium Website<br> 
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+        <div class="fw-bold"><?php echo $SW3->title ?></div>
+            <?php echo $SW3->description ?><br> <a href="json/<?php echo $SW3->id ?>.php">API</a> <a href="<?php echo $SW3->api->hostname ?>">SITE</a></div>
+            <?php if($SW3->api->online){?>
+               <span class="badge bg-success rounded-pill">
+                 O
+            <?php }else{ ?>
+               <span class="badge bg-danger rounded-pill"> 
+                 X
+            <?php }?>
         </li>
 
     </div>
@@ -62,17 +90,23 @@ var_dump($API_ARRAY)
 
   <li class="list-group-item d-flex justify-content-between align-items-start  list-group-item-primary">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">- <u>DB</u></div>
+      <div class="fw-bold">- <u>Data Base</u></div>
 
-
+      <!-- SD1 = DB Tyrolium.fr -->
       <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <div class="fw-bold">DB Tyrolium.fr</div>
-                Data Base stocked "Nous Contacter"
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+      <div class="ms-2 me-auto">
+            <div class="fw-bold"><?php echo $SD1->title; ?></div>
+            <?php echo $SD1->description; ?> <br> <a href="json/<?php echo $SD1->id ?>.php">API</a></div>
+            <?php if($SD1->api->online){?>
+               <span class="badge bg-success rounded-pill">
+                 O
+            <?php }else{ ?>
+               <span class="badge bg-danger rounded-pill"> 
+                 X
+            <?php }?> </span>
         </li>
 
+        <!-- SD2 = DB TyroServ-User -->
       <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
         <div class="ms-2 me-auto">
             <div class="fw-bold">DB TyroServ-User</div>
@@ -81,6 +115,7 @@ var_dump($API_ARRAY)
             <span class="badge bg-danger rounded-pill">X</span>
         </li>
 
+        <!-- SD3 = DB TyroServ-LogConnecte -->
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">DB TyroServ-LogConnecte</div>
@@ -89,6 +124,7 @@ var_dump($API_ARRAY)
             <span class="badge bg-danger rounded-pill">X</span>
         </li>
 
+          <!-- SD4 = DB TyroServ-Login -->
         <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
         <div class="ms-2 me-auto">
             <div class="fw-bold">DB TyroServ-Login</div>
@@ -105,7 +141,7 @@ var_dump($API_ARRAY)
     <div class="ms-2 me-auto">
       <div class="fw-bold">- <u>API</u></div>
 
-
+            <!-- SA1 = API User/TyroServ.fr -->
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">API User/TyroServ.fr</div>
@@ -114,6 +150,7 @@ var_dump($API_ARRAY)
             <span class="badge bg-danger rounded-pill">X</span>
         </li>
 
+        <!-- SA2 = API MC-Server/TyroServBot -->
         <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
         <div class="ms-2 me-auto">
             <div class="fw-bold">API MC-Server/TyroServBot</div>
@@ -130,6 +167,7 @@ var_dump($API_ARRAY)
     <div class="ms-2 me-auto">
       <div class="fw-bold">- <u>Hosting File</u></div>
         
+      <!-- SH1 = Host Instance Minecraft -->
       <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">Host Instance Minecraft</div>
@@ -138,6 +176,7 @@ var_dump($API_ARRAY)
             <span class="badge bg-danger rounded-pill">X</span>
         </li>
 
+        <!-- SH2 = Host Instance Launcher Minecraft -->
         <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
         <div class="ms-2 me-auto">
             <div class="fw-bold">Host Instance Launcher Minecraft</div>
@@ -146,6 +185,7 @@ var_dump($API_ARRAY)
             <span class="badge bg-danger rounded-pill">X</span>
         </li>
 
+        <!-- SH3 = Host Download Launcher Minecraft -->
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">Host Download Launcher Minecraft</div>
@@ -161,13 +201,13 @@ var_dump($API_ARRAY)
     <div class="ms-2 me-auto">
       <div class="fw-bold">- <u>Other</u></div>
       
-      <?php $API_SO1 = json_decode(file_get_contents('http://localhost/Status/api/SO1.php')); ?>
+
+      <!-- SO1 = Server Minecraft TyroServ -->
       <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
-            
-            <div class="fw-bold"><?php echo $API_SO1->title; ?></div>
-            <?php echo $API_SO1->description; ?></div>
-            <?php if($API_SO1->result){?>
+            <div class="fw-bold"><?php echo $SO1->title; ?></div>
+            <?php echo $SO1->description; ?> <br> <a href="json/<?php echo $SO1->id ?>.php">API</a></div>
+            <?php if($SO1->api->online){?>
                <span class="badge bg-success rounded-pill">
                  O
             <?php }else{ ?>
@@ -176,6 +216,7 @@ var_dump($API_ARRAY)
             <?php }?> </span>
         </li>
 
+        <!-- SO2 = TyroBot -->
         <li class="btnApi list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">TyroBot</div>
@@ -183,20 +224,23 @@ var_dump($API_ARRAY)
     </div>
     <span class="badge bg-danger rounded-pill">X</span>
   </li>
+
+  <!-- SO3 = TyroServBot -->
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
       <div class="fw-bold">TyroServBot</div>
       The Official TyroServ Discord Bot<br>
     </div>
-    <span class="badge bg-success rounded-pill">O</span>
+    <span class="badge bg-danger rounded-pill">X</span>
   </li>
 
+  <!-- SO4 = TyroDiscordRPCSwitch -->
   <li class="btnApi list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">TyroDiscordRPCSwitch</div>
        Applications Discord in Switch<br> 
     </div>
-    <span class="badge bg-success rounded-pill">O</span>
+    <span class="badge bg-danger rounded-pill">X</span>
     </div>
   </li>
 
@@ -214,7 +258,7 @@ var_dump($API_ARRAY)
 
 <hr>
 
-<h4>Nos Serveurs</h4>
+<h4>Tyrolium Servers</h4>
 
 <ol class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
@@ -227,19 +271,19 @@ var_dump($API_ARRAY)
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps201</div>
     </div>
-    <span class="badge bg-success rounded-pill">O</span>
+    <span class="badge bg-danger rounded-pill">X</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps202</div>
     </div>
-    <span class="badge bg-success rounded-pill">O</span>
+    <span class="badge bg-danger rounded-pill">X</span>
   </li>
 </ol>
 
 <br>
 
-<h4>Nos Nom de Domaine</h4>
+<h4>Tyrolium Domain Name</h4>
 
 <ol class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
@@ -252,32 +296,32 @@ var_dump($API_ARRAY)
     <div class="ms-2 me-auto">
       <div class="fw-bold">tyroserv.fr</div>
     </div>
-    <span class="badge bg-success rounded-pill">O</span>
+    <span class="badge bg-danger rounded-pill">X</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">wonderlium.yt</div>
     </div>
-    <span class="badge bg-success rounded-pill">O</span>
+    <span class="badge bg-danger rounded-pill">X</span>
   </li>
 </ol>
 
 <hr>
 
-<h4>Nos Clients</h4>
+<h4>Client Servers</h4>
 
 <ol class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">193.70.112.***</div>
     </div>
-    <span class="badge bg-success rounded-pill">O</span>
+    <span class="badge bg-danger rounded-pill">X</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">193.70.0.***</div>
     </div>
-    <span class="badge bg-success rounded-pill">O</span>
+    <span class="badge bg-danger rounded-pill">X</span>
   </li>
 </ol>
 
