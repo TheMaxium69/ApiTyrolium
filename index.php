@@ -39,9 +39,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
 
 <br>
 
-<h4>Tyrolium Online Services</h4>
+<h4 class="container">Tyrolium Online Services</h4>
 
-<ol class="list-group">
+<ol class="list-group container">
 
   <li class="list-group-item d-flex justify-content-between align-items-start  list-group-item-primary">
     <div class="ms-2 me-auto">
@@ -258,9 +258,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
 
 <hr>
 
-<h4>Tyrolium Servers</h4>
+<h4 class="container">Tyrolium Servers</h4>
 
-<ol class="list-group">
+<ol class="list-group container">
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">cloud101</div>
@@ -283,9 +283,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
 
 <br>
 
-<h4>Tyrolium Domain Name</h4>
+<h4 class="container">Tyrolium Domain Name</h4>
 
-<ol class="list-group">
+<ol class="list-group container">
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">tyrolium.fr</div>
@@ -308,9 +308,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
 
 <hr>
 
-<h4>Client Servers</h4>
+<h4 class="container">Client Servers</h4>
 
-<ol class="list-group">
+<ol class="list-group container">
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">193.70.112.***</div>
