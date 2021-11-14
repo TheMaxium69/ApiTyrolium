@@ -22,9 +22,8 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
   <head>
     <title>Tyrolium API</title>
     <meta charset="utf-8">
+    <link href="https://tyrolium.fr/Contenu/Image/Tyrolium Site.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   </head>
   <body>
@@ -233,8 +232,7 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
             </span>
         </li>
     </div>
-  </li>
-
+  </li>    
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-primary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">- <u>Other</u></div>
@@ -285,6 +283,18 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
     </div>
   </li>
 
+  <!-- SO5 = Panel -->
+  <li class="btnApi list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Owner Panel</div>
+       Admin & Owner Panel and gestion permission<br> 
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </div>
+  </li>
+
+
   
 
         
@@ -305,6 +315,7 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">proxy601</div>
+      Strasbourg - France 🇫🇷<br>
     </div><span class="badge bg-success rounded-pill">
                  O
             </span>
@@ -312,6 +323,7 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">cloud101</div>
+      Gravelines - France 🇫🇷<br> 
     </div><span class="badge bg-success rounded-pill">
                  O
             </span>
@@ -319,6 +331,7 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps201</div>
+      Gravelines - France 🇫🇷<br>
     </div><span class="badge bg-success rounded-pill">
                  O
             </span>
@@ -326,6 +339,15 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps202</div>
+      Gravelines - France 🇫🇷<br> 
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">vps203</div>
+      Tokyo - Japon 🇯🇵<br>
     </div><span class="badge bg-success rounded-pill">
                  O
             </span>
@@ -364,6 +386,43 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
 </ol>
 
 <hr>
+
+<h4 class="container">VPN Services</h4>
+
+<ol class="list-group container">
+
+      <!-- SN1 = vpn401 -->
+      <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">VPN 401</div>
+            Virtual Private Network | USER ID #50101 (Gravelines - France 🇫🇷)<br> 
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
+      <!-- SN2 = vpn402 -->  
+      <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">VPN 402</div>
+            Virtual Private Network | USER ID #50201 (Tokyo - Japon 🇯🇵)<br> 
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li> 
+
+        <!-- SN3 = vpn403 -->
+        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">    
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">VPN 403</div>
+            Virtual Private Network | USER ID #50202 (Tokyo - Japon 🇯🇵)<br> 
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>   
+
+</ol>
+
+<br>
 
 <h4 class="container">Client Servers</h4>
 
