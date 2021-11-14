@@ -32,7 +32,7 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="https://tyrolium.fr/Contenu/Image/Tyrolium Site.png" alt="" width="34" class="d-inline-block align-text-top">
-      Tyrolium API 
+      Tyrolium Status 
     </a>
   </div>
 </nav>
@@ -66,8 +66,10 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">TyroServ.fr</div>
             The Official TyroServ Website<br> 
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            <a href="https://tyroserv.fr/">SITE</a>
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
         <!-- SW3 = Wonderlium.yt -->
@@ -84,6 +86,16 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
             <?php }?>
         </li>
 
+        <!-- SW4 = status.tyrolium.fr -->
+        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+        <div class="fw-bold">Status.Tyrolium.fr</div>
+              WebSite Status Service and Server<br>
+              <a href="https://status.tyrolium.fr/">SITE</a>
+              </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
     </div>
   </li>  
 
@@ -111,8 +123,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">DB TyroServ-User</div>
             Data Base stocked TyroServ User
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
         <!-- SD3 = DB TyroServ-LogConnecte -->
@@ -120,8 +133,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">DB TyroServ-LogConnecte</div>
             Data Base stocked TyroServ Connections Launcher
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
           <!-- SD4 = DB TyroServ-Login -->
@@ -129,10 +143,20 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">DB TyroServ-Login</div>
             Data Base stocked TyroServ /Login & /register
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
+        <!-- SD5 = DB TyroServ-Login -->
+        <li class="list-group-item d-flex justify-content-between align-items-start ">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">DB Member-Tyrolium</div>
+            Data Base stocked List Member Tyrolium
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
 
     </div>
   </li>
@@ -146,17 +170,19 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">API User/TyroServ.fr</div>
                 Api Connecte DB TyroServ in TyroServ.fr<br> 
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
-        <!-- SA2 = API MC-Server/TyroServBot -->
+        <!-- SA2 = API MC-Server/TyroServBot & Tyrolium Status -->
         <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
         <div class="ms-2 me-auto">
             <div class="fw-bold">API MC-Server/TyroServBot</div>
                 Api Connecte Server Minecraft in TyroServBot<br> 
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
 
@@ -171,9 +197,10 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
       <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">Host Instance Minecraft</div>
-                Hosting update instance /.tyrolium/<br> 
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+                Hosting update instance /.Tyrolium/<br> 
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
         <!-- SH2 = Host Instance Launcher Minecraft -->
@@ -181,8 +208,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">Host Instance Launcher Minecraft</div>
                 Hosting update instance Launcher Minecraft<br> 
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
         <!-- SH3 = Host Download Launcher Minecraft -->
@@ -190,10 +218,20 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">Host Download Launcher Minecraft</div>
                 Hosting File Launcher.exe and Launcher.jar<br> 
-            </div>
-            <span class="badge bg-danger rounded-pill">X</span>
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
         </li>
 
+        <!-- SH3 = Host Download Launcher Minecraft -->
+        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">Host Picture Tyrolium</div>
+                Hosting File Picture in Tyrolium<br> 
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
     </div>
   </li>
 
@@ -221,8 +259,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
     <div class="ms-2 me-auto">
       <div class="fw-bold">TyroBot</div>
        The Official Tyrolium Discord Bot<br> 
-    </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
 
   <!-- SO3 = TyroServBot -->
@@ -230,8 +269,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
     <div class="ms-2 me-auto">
       <div class="fw-bold">TyroServBot</div>
       The Official TyroServ Discord Bot<br>
-    </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
 
   <!-- SO4 = TyroDiscordRPCSwitch -->
@@ -239,8 +279,9 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
     <div class="ms-2 me-auto">
       <div class="fw-bold">TyroDiscordRPCSwitch</div>
        Applications Discord in Switch<br> 
-    </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
     </div>
   </li>
 
@@ -261,23 +302,33 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
 <h4 class="container">Tyrolium Servers</h4>
 
 <ol class="list-group container">
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">proxy601</div>
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+  </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">cloud101</div>
-    </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps201</div>
-    </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps202</div>
-    </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
 </ol>
 
@@ -290,19 +341,25 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
     <div class="ms-2 me-auto">
       <div class="fw-bold">tyrolium.fr</div>
     </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    <span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">tyroserv.fr</div>
     </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    <span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">wonderlium.yt</div>
     </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    <span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
 </ol>
 
@@ -314,15 +371,31 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">193.70.112.***</div>
+      Client ID : 1601<br>
     </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+    <span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">193.70.0.***</div>
+      Client ID : 1602<br>
     </div>
-    <span class="badge bg-danger rounded-pill">X</span>
+            <span class="badge bg-success rounded-pill">
+                 O
+            </span>
   </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">193.70.37.**</div>
+      Client ID : 1603<br> 
+    </div>
+                    <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+  </li>
+  
 </ol>
 
 <hr>
