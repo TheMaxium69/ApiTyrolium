@@ -85,16 +85,29 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
             <?php }?>
         </li>
 
-        <!-- SW4 = status.tyrolium.fr -->
+        <!-- SW5 = selemusium.xyz -->
         <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
         <div class="ms-2 me-auto">
-        <div class="fw-bold">Status.Tyrolium.fr</div>
-              WebSite Status Service and Server<br>
-              <a href="https://status.tyrolium.fr/">SITE</a>
+        <div class="fw-bold">Selemusium.xyz</div>
+              The Official Sélémusium Website<br>
+              <a href="http://selemusium.xyz/">SITE</a>
               </div><span class="badge bg-success rounded-pill">
                  O
             </span>
         </li>
+
+        <!-- SW4 = status.tyrolium.fr -->
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+        <div class="fw-bold">Status.Tyrolium.fr</div>
+              WebSite Status Service and Server<br>
+              <a href="http://status.tyrolium.fr/">SITE</a>
+              </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
+
+        
     </div>
   </li>  
 
@@ -152,6 +165,26 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">DB Member-Tyrolium</div>
             Data Base stocked List Member Tyrolium
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
+
+        <!-- SD6 = DB Sélémusium-Music -->
+        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">DB Sélémusium-Music</div>
+            Data Base stocked List Music Sélémusium
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
+
+        <!-- SD7 = DB Sélémusium-Login -->
+        <li class="list-group-item d-flex justify-content-between align-items-start ">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">DB Sélémusium-Login</div>
+            Data Base stocked List Admin Membre Sélémusium
             </div><span class="badge bg-success rounded-pill">
                  O
             </span>
