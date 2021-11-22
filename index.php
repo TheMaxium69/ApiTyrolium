@@ -383,6 +383,14 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  O
             </span>
   </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">selemusium.xyz</div>
+    </div>
+    <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+  </li>
 </ol>
 
 <hr>
