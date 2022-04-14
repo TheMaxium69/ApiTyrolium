@@ -380,11 +380,19 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
   <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps203</div>
-      Tokyo - Japon 🇯🇵<br>
-    </div><span class="badge bg-success rounded-pill">
-                 O
+        Tokyo - Japon 🇯🇵<br>
+    </div><span class="badge bg-danger rounded-pill">
+                 X
             </span>
   </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">serv301</div>
+            Frankfurt am Main - Allemagne 🇩🇪<br>
+        </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
 </ol>
 
 <br>
@@ -432,6 +440,22 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  O
             </span>
     </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">solidserv.fr</div>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">solidserv.xyz</div>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
 </ol>
 
 <hr>
@@ -454,8 +478,8 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">VPN 402</div>
             Virtual Private Network | USER ID #50201 (Tokyo - Japon 🇯🇵)<br> 
-            </div><span class="badge bg-success rounded-pill">
-                 O
+            </div><span class="badge bg-danger rounded-pill">
+                 X
             </span>
         </li> 
 
@@ -464,8 +488,8 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">VPN 403</div>
             Virtual Private Network | USER ID #50202 (Tokyo - Japon 🇯🇵)<br> 
-            </div><span class="badge bg-success rounded-pill">
-                 O
+            </div><span class="badge bg-danger rounded-pill">
+                 X
             </span>
         </li>   
 
@@ -503,6 +527,26 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  O
             </span>
   </li>
+
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">193.91.30.**</div>
+            Client ID : 1604<br>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">193.70.32.**</div>
+            Client ID : 1605<br>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
   
 </ol>
 
