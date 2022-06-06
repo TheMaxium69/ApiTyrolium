@@ -90,7 +90,7 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
         <div class="fw-bold">Selemusium.xyz</div>
               The Official Sélémusium Website<br>
-              <a href="http://selemusium.xyz/">SITE</a>
+              <a href="https://selemusium.xyz/">SITE</a>
               </div><span class="badge bg-success rounded-pill">
                  O
             </span>
@@ -102,6 +102,26 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="fw-bold">Status.Tyrolium.fr</div>
               WebSite Status Service and Server<br>
               <a href="http://status.tyrolium.fr/">SITE</a>
+              </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
+                   
+        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+        <div class="fw-bold">SolidServ.fr</div>
+              The Official SolidServ Website<br>
+              <a href="https://SolidServ.fr/">SITE</a>
+              </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
+                   
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+        <div class="fw-bold">www.TyroDiscord.xyz</div>
+              The Official TyroDiscord Website<br>
+              <a href="https://www.tyrodiscord.xyz/">SITE</a>
               </div><span class="badge bg-success rounded-pill">
                  O
             </span>
@@ -185,6 +205,15 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
         <div class="ms-2 me-auto">
             <div class="fw-bold">DB Sélémusium-Login</div>
             Data Base stocked List Admin Membre Sélémusium
+            </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+        </li>
+        
+        <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">DB SolidServ-User</div>
+            Data Base stocked SolidServ User
             </div><span class="badge bg-success rounded-pill">
                  O
             </span>
@@ -304,9 +333,19 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  O
             </span>
   </li>
+        
+  <li class="btnApi list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">SolidServBot</div>
+       The Official SolidServ Discord Bot<br> 
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </div>
+  </li>
 
   <!-- SO4 = TyroDiscordRPCSwitch -->
-  <li class="btnApi list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+  <li class="btnApi list-group-item d-flex justify-content-between align-items-start ">
     <div class="ms-2 me-auto">
       <div class="fw-bold">TyroDiscordRPCSwitch</div>
        Applications Discord in Switch<br> 
@@ -315,9 +354,11 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
             </span>
     </div>
   </li>
+                   
+  
 
   <!-- SO5 = Panel -->
-  <li class="btnApi list-group-item d-flex justify-content-between align-items-start">
+  <li class="btnApi list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">Owner Panel</div>
        Admin & Owner Panel and gestion permission<br> 
@@ -326,6 +367,27 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
             </span>
     </div>
   </li>
+    
+<li class="btnApi list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">WHMC Panel</div>
+       Admin & Owner Panel SolidServ <br> 
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </div>
+  </li>
+    
+<li class="btnApi list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Pterodactyl Panel</div>
+       Game Panel SolidServ <br> 
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </div>
+  </li>
+
 
 
   
@@ -361,7 +423,15 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  O
             </span>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+<li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">cloud102</div>
+      Gravelines - France 🇫🇷<br> 
+    </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps201</div>
       Gravelines - France 🇫🇷<br>
@@ -369,7 +439,7 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  O
             </span>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps202</div>
       Gravelines - France 🇫🇷<br> 
@@ -377,7 +447,7 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  O
             </span>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
     <div class="ms-2 me-auto">
       <div class="fw-bold">vps203</div>
         Tokyo - Japon 🇯🇵<br>
@@ -385,10 +455,18 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  X
             </span>
   </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
         <div class="ms-2 me-auto">
             <div class="fw-bold">serv301</div>
             Frankfurt am Main - Allemagne 🇩🇪<br>
+        </div><span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">serv302</div>
+            Strasbourg - France 🇫🇷<br>
         </div><span class="badge bg-success rounded-pill">
                  O
             </span>
@@ -451,6 +529,30 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
     <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
         <div class="ms-2 me-auto">
             <div class="fw-bold">solidserv.xyz</div>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">tyrodiscord.xyz</div>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">useritium.fr</div>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">gamenium.fr</div>
         </div>
         <span class="badge bg-success rounded-pill">
                  O
@@ -547,6 +649,67 @@ $SO1 = json_decode(file_get_contents( $url . 'json/SO1.php'));
                  O
             </span>
     </li>
+    
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">51.91.227.**</div>
+            Client ID : 1606<br>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">51.91.227.**</div>
+            Client ID : 1607<br>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">51.91.227.**</div>
+            Client ID : 1608<br>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">51.91.227.**</div>
+            Client ID : 1609<br>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-secondary">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">51.91.227.**</div>
+            Client ID : 1610<br>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+    
+    <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-dark">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">51.91.227.**</div>
+            Client ID : 1611<br>
+        </div>
+        <span class="badge bg-success rounded-pill">
+                 O
+            </span>
+    </li>
+
   
 </ol>
 
